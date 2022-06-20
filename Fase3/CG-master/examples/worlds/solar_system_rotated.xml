@@ -1,0 +1,116 @@
+<world>
+
+    <camera>
+        <position x="500" y="10" z="500" />
+        <lookAt x="0" y="0" z="0" />
+        <up x="0" y="1" z="0" />
+        <projection fov="60" near="10" far="30000" />
+    </camera>
+
+    <group>
+        <!-- Sun -->
+        <models>
+            <model file="examples/models/sun.3d" />
+        </models>
+
+        <!-- Mercury -->
+        <group>
+            <transform>
+                <rotate angle="45" x="0" y="1" z="0" />
+                <translate x="142.5" y="0" z="0" />
+            </transform>
+            <models>
+                <model file="examples/models/mercury.3d" />
+            </models>
+        </group>
+
+        <!-- Venus -->
+        <group>
+            <transform>
+                <rotate angle="90" x="0" y="1" z="0" />
+                <translate x="270" y="0" z="0" />
+            </transform>
+            <models>
+                <model file="examples/models/venus.3d" />
+            </models>
+        </group>
+
+        <group>
+            <!-- Earth -->
+            <transform>
+                <rotate angle="135" x="0" y="1" z="0" />
+                <translate x="372.5" y="0" z="0" />
+            </transform>
+            <models>
+                <model file="examples/models/earth.3d" />
+            </models>
+
+            <!-- Moon -->
+            <group>
+                <transform>
+                    <rotate angle="45" x="0" y="0" z="1" />
+                    <rotate angle="-90" x="0" y="1" z="0" />
+                    <translate x="38.4" y="0" z="0" />
+                </transform>
+                <models>
+                    <model file="examples/models/moon.3d" />
+                </models>
+            </group>
+        </group>
+
+        <!-- Mars -->
+        <group>
+            <transform>
+                <rotate angle="180" x="0" y="1" z="0" />
+                <translate x="570" y="0" z="0" />
+            </transform>
+            <models>
+                <model file="examples/models/mars.3d" />
+            </models>
+        </group>
+
+        <!-- Jupiter -->
+        <group>
+            <transform>
+                <rotate angle="215" x="0" y="1" z="0" />
+                <translate x="1950" y="0" z="0" />
+            </transform>
+            <models>
+                <model file="examples/models/jupiter.3d" />
+            </models>
+        </group>
+
+        <!-- Saturn -->
+        <group>
+            <transform>
+                <rotate angle="230" x="0" y="1" z="0" />
+                <translate x="3592.5" y="0" z="0" />
+            </transform>
+            <models>
+                <model file="examples/models/saturn.3d" />
+            </models>
+        </group>
+
+        <!-- Uranus -->
+        <group>
+            <transform>
+                <rotate angle="275" x="0" y="1" z="0" />
+                <translate x="7177.5" y="0" z="0" />
+            </transform>
+            <models>
+                <model file="examples/models/uranus.3d" />
+            </models>
+        </group>
+
+        <!-- Neptune -->
+        <group>
+            <transform>
+                <rotate angle="320" x="0" y="1" z="0" />
+                <translate x="11325" y="0" z="0" />
+            </transform>
+            <models>
+                <model file="examples/models/neptune.3d" />
+            </models>
+        </group>
+    </group>
+</world>
