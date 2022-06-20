@@ -1,0 +1,106 @@
+<world>
+
+    <camera>
+        <position x="500" y="10" z="500" />
+        <lookAt x="0" y="0" z="0" />
+        <up x="0" y="1" z="0" />
+        <projection fov="60" near="10" far="30000" />
+    </camera>
+
+    <group>
+        <!-- Sun -->
+        <models>
+            <model file="demo_scenes/models/sun.3d" />
+        </models>
+
+        <!-- Mercury -->
+        <group>
+            <transform>
+                <translate x="142.5" y="0" z="0" />
+            </transform>
+            <models>
+                <model file="demo_scenes/models/mercury.3d" />
+            </models>
+        </group>
+
+        <!-- Venus -->
+        <group>
+            <transform>
+                <translate x="270" y="0" z="0" />
+            </transform>
+            <models>
+                <model file="demo_scenes/models/venus.3d" />
+            </models>
+        </group>
+
+        <group>
+            <!-- Earth -->
+            <transform>
+                <translate x="372.5" y="0" z="0" />
+            </transform>
+            <models>
+                <model file="demo_scenes/models/earth.3d" />
+            </models>
+
+            <!-- Moon -->
+            <group>
+                <transform>
+                    <translate x="38.4" y="0" z="0" />
+                </transform>
+                <models>
+                    <model file="demo_scenes/models/moon.3d" />
+                </models>
+            </group>
+        </group>
+
+        <!-- Mars -->
+        <group>
+            <transform>
+                <translate x="570" y="0" z="0" />
+            </transform>
+            <models>
+                <model file="demo_scenes/models/mars.3d" />
+            </models>
+        </group>
+
+        <!-- Jupiter -->
+        <group>
+            <transform>
+                <translate x="1950" y="0" z="0" />
+            </transform>
+            <models>
+                <model file="demo_scenes/models/jupiter.3d" />
+            </models>
+        </group>
+
+        <!-- Saturn -->
+        <group>
+            <transform>
+                <translate x="3592.5" y="0" z="0" />
+            </transform>
+            <models>
+                <model file="demo_scenes/models/saturn.3d" />
+            </models>
+        </group>
+
+        <!-- Uranus -->
+        <group>
+            <transform>
+                <translate x="7177.5" y="0" z="0" />
+            </transform>
+            <models>
+                <model file="demo_scenes/models/uranus.3d" />
+            </models>
+        </group>
+
+        <!-- Neptune -->
+        <group>
+            <transform>
+                <translate x="11325" y="0" z="0" />
+            </transform>
+            <models>
+                <model file="demo_scenes/models/neptune.3d" />
+            </models>
+        </group>
+    </group>
+</world>
